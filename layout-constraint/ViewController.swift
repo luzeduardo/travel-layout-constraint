@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viagensTableView.dataSource = self
+        viagensTableView.delegate = self
         // Do any additional setup after loading the view.
     }
 }
