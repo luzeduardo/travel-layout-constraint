@@ -34,5 +34,9 @@ extension ViewController: UITableViewDelegate {
         let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self).first as? HomeTableViewHeader
         return headerView
     }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 300
+    }
 }
 
