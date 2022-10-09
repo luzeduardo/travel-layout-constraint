@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController {
 
     @IBOutlet weak var viagensTableView: UITableView!
     override func viewDidLoad() {
@@ -15,7 +15,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         viagensTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
+}
+
+extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
