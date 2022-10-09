@@ -13,4 +13,8 @@ class HomeTableViewHeader: UIView {
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var bannerImageView: UIImageView!
+
+    func configuraView() {
+        headerView.backgroundColor = UIColor(red: 30, green: 59, blue: 119, alpha: 1)
+    }
 }
