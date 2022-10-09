@@ -31,7 +31,8 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        <#code#>
+        let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self).first as? HomeTableViewHeader
+        return headerView
     }
 }
 
