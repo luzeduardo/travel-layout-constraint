@@ -13,6 +13,8 @@
 		B5AC143228F2397000A4EFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AC143028F2397000A4EFBE /* Main.storyboard */; };
 		B5AC143428F2397100A4EFBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AC143328F2397100A4EFBE /* Assets.xcassets */; };
 		B5AC143728F2397100A4EFBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AC143528F2397100A4EFBE /* LaunchScreen.storyboard */; };
+		B5AC143F28F2B01E00A4EFBE /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5AC143E28F2B01E00A4EFBE /* HomeTableViewHeader.xib */; };
+		B5AC144328F2D49F00A4EFBE /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC144228F2D49F00A4EFBE /* HomeTableViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B5AC143328F2397100A4EFBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5AC143628F2397100A4EFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5AC143828F2397100A4EFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5AC143E28F2B01E00A4EFBE /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
+		B5AC144228F2D49F00A4EFBE /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B5AC143328F2397100A4EFBE /* Assets.xcassets */,
 				B5AC143528F2397100A4EFBE /* LaunchScreen.storyboard */,
 				B5AC143828F2397100A4EFBE /* Info.plist */,
+				B5AC143E28F2B01E00A4EFBE /* HomeTableViewHeader.xib */,
+				B5AC144228F2D49F00A4EFBE /* HomeTableViewHeader.swift */,
 			);
 			path = "layout-constraint";
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5AC143728F2397100A4EFBE /* LaunchScreen.storyboard in Resources */,
+				B5AC143F28F2B01E00A4EFBE /* HomeTableViewHeader.xib in Resources */,
 				B5AC143428F2397100A4EFBE /* Assets.xcassets in Resources */,
 				B5AC143228F2397000A4EFBE /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5AC142F28F2397000A4EFBE /* ViewController.swift in Sources */,
+				B5AC144328F2D49F00A4EFBE /* HomeTableViewHeader.swift in Sources */,
 				B5AC142B28F2397000A4EFBE /* AppDelegate.swift in Sources */,
 				B5AC142D28F2397000A4EFBE /* SceneDelegate.swift in Sources */,
 			);
