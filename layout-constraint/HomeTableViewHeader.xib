@@ -15,11 +15,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcS-U1-KmO" userLabel="HeaderView">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <rect key="frame" x="-293" y="0.0" width="1000" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Travel Layout Constraints" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f38-LS-bfu">
-                            <rect key="frame" x="8" y="55" width="257" height="43"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Layout Constraints" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f38-LS-bfu">
+                            <rect key="frame" x="313" y="48" width="256.33333333333326" height="20"/>
                             <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -27,7 +26,9 @@
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="f38-LS-bfu" firstAttribute="top" secondItem="gcS-U1-KmO" secondAttribute="top" constant="48" id="IlH-Rc-ACW"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="VGS-NP-rEC"/>
+                        <constraint firstAttribute="width" constant="1000" id="m9d-DN-pW8"/>
                         <constraint firstAttribute="height" constant="250" id="wqH-VY-39f"/>
                     </constraints>
                 </view>
@@ -82,11 +83,11 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="8Jm-Ha-CYd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="8IF-b2-q4V"/>
-                <constraint firstItem="gcS-U1-KmO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DR9-Jb-HvD"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HGH-vK-iGJ" secondAttribute="trailing" constant="19" id="OvZ-E3-xWW"/>
                 <constraint firstItem="gcS-U1-KmO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SSS-Tu-Zep"/>
                 <constraint firstItem="6XM-1f-9Fc" firstAttribute="bottom" secondItem="gcS-U1-KmO" secondAttribute="bottom" constant="10" id="Tc5-f5-NQm"/>
-                <constraint firstItem="gcS-U1-KmO" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="u05-Im-cMk"/>
+                <constraint firstItem="f38-LS-bfu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="TdM-Z2-ksA"/>
+                <constraint firstItem="gcS-U1-KmO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Wdo-da-k82"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
