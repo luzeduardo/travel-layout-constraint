@@ -60,7 +60,7 @@
                                 <constraint firstItem="AHq-Fg-K5j" firstAttribute="top" secondItem="8Jm-Ha-CYd" secondAttribute="top" constant="14" id="S4P-Ln-c6Z"/>
                             </constraints>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="HGH-vK-iGJ">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="HGH-vK-iGJ">
                             <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="130"/>
                         </imageView>
                     </subviews>
