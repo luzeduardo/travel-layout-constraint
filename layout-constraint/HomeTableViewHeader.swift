@@ -18,6 +18,7 @@ class HomeTableViewHeader: UIView {
     func configuraView() {
         headerView.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1)
         headerView.layer.cornerRadius = 100
+        headerView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         bannerView.layer.cornerRadius = 10
         bannerView.layer.masksToBounds = true
     }
