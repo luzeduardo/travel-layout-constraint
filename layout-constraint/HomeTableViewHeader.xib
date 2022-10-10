@@ -31,20 +31,32 @@
                         <constraint firstAttribute="height" constant="250" id="wqH-VY-39f"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6XM-1f-9Fc" userLabel="BannerView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6XM-1f-9Fc" userLabel="BannerView">
                     <rect key="frame" x="20" y="130" width="375" height="130"/>
                     <subviews>
-                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Jm-Ha-CYd">
-                            <rect key="frame" x="0.0" y="0.0" width="201" height="122"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Jm-Ha-CYd">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
                             <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="sfI-cc-Sgo"/>
+                            </constraints>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGH-vK-iGJ">
-                            <rect key="frame" x="198" y="-6" width="177" height="128"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HGH-vK-iGJ">
+                            <rect key="frame" x="199" y="0.0" width="176" height="130"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="176" id="lzw-R4-uz0"/>
+                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HGH-vK-iGJ" secondAttribute="bottom" id="3kg-3a-hID"/>
+                        <constraint firstAttribute="bottom" secondItem="8Jm-Ha-CYd" secondAttribute="bottom" id="5vl-Hc-rfG"/>
                         <constraint firstAttribute="height" constant="130" id="O1y-7L-tSd"/>
+                        <constraint firstAttribute="trailing" secondItem="HGH-vK-iGJ" secondAttribute="trailing" id="QaT-1v-tIb"/>
+                        <constraint firstItem="HGH-vK-iGJ" firstAttribute="top" secondItem="6XM-1f-9Fc" secondAttribute="top" id="QfC-AW-loU"/>
+                        <constraint firstItem="8Jm-Ha-CYd" firstAttribute="leading" secondItem="6XM-1f-9Fc" secondAttribute="leading" id="ZCt-FA-VLA"/>
+                        <constraint firstItem="8Jm-Ha-CYd" firstAttribute="top" secondItem="6XM-1f-9Fc" secondAttribute="top" id="rJE-ga-0pE"/>
                     </constraints>
                 </view>
             </subviews>
