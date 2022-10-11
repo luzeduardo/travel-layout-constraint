@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let CellIdentifier = "ViagemTableViewCell"
     @IBOutlet weak var viagensTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 
     func configuraTableView() {
-        viagensTableView.register(UINib(nibName: "ViagemTableViewCell", bundle: nil), forCellReuseIdentifier: "ViagemTableViewCell")
+        viagensTableView.register(UINib(nibName: CellIdentifier, bundle: nil), forCellReuseIdentifier: CellIdentifier)
         viagensTableView.dataSource = self
         viagensTableView.delegate = self
     }
@@ -30,9 +30,10 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = "\(indexPath.row)"
-        return cell
+        guard let celulaViagem = tableView.dequeueReusableCell(withIdentifier: CellIdentifier) as? ViagemTableViewCell else {
+            fatalError("error to create ViagemTableViewCell")
+        }
+        return celulaViagem
     }
 }
 
@@ -45,6 +46,10 @@ extension ViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 300
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
     }
 }
 
