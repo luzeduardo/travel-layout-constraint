@@ -20,7 +20,7 @@ class ViagemTableViewCell: UITableViewCell {
     @IBOutlet weak var statusCancelamentoViagemLabel: UILabel!
     @IBOutlet weak var precoSemDescontoLabel: UILabel!
     
-    func configuraCelular(_ viagem: Viagem?) {
+    func configuraCelula(_ viagem: Viagem?) {
         viagemImage.image = UIImage(named: viagem?.asset ?? "")
         tituloViagemLabel.text = viagem?.titulo
         subtituloViagemLabel.text = viagem?.subtitulo
