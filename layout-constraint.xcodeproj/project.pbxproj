@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		B543AABF28F5483B0087BD65 /* ViagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543AABD28F5483B0087BD65 /* ViagemTableViewCell.swift */; };
 		B543AAC028F5483B0087BD65 /* ViagemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B543AABE28F5483B0087BD65 /* ViagemTableViewCell.xib */; };
+		B543AAC328F55D2B0087BD65 /* server-response.json in Resources */ = {isa = PBXBuildFile; fileRef = B543AAC228F55D2B0087BD65 /* server-response.json */; };
+		B59BAACE28F55F260027EAD8 /* DecodableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BAACD28F55F260027EAD8 /* DecodableData.swift */; };
+		B59BAAD028F55F2E0027EAD8 /* TiposDeViagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BAACF28F55F2E0027EAD8 /* TiposDeViagens.swift */; };
+		B59BAAD228F55F3B0027EAD8 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BAAD128F55F3B0027EAD8 /* Viagem.swift */; };
+		B59BAAD528F55F560027EAD8 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BAAD428F55F560027EAD8 /* UIView+Extension.swift */; };
 		B5AC142B28F2397000A4EFBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC142A28F2397000A4EFBE /* AppDelegate.swift */; };
 		B5AC142D28F2397000A4EFBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC142C28F2397000A4EFBE /* SceneDelegate.swift */; };
 		B5AC142F28F2397000A4EFBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC142E28F2397000A4EFBE /* ViewController.swift */; };
@@ -22,6 +27,11 @@
 /* Begin PBXFileReference section */
 		B543AABD28F5483B0087BD65 /* ViagemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemTableViewCell.swift; sourceTree = "<group>"; };
 		B543AABE28F5483B0087BD65 /* ViagemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViagemTableViewCell.xib; sourceTree = "<group>"; };
+		B543AAC228F55D2B0087BD65 /* server-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "server-response.json"; path = "../../../../../Downloads/Arquivos Swift/arquivos/server-response.json"; sourceTree = "<group>"; };
+		B59BAACD28F55F260027EAD8 /* DecodableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecodableData.swift; path = "../../../../../Downloads/Arquivos Swift/arquivos/DecodableData.swift"; sourceTree = "<group>"; };
+		B59BAACF28F55F2E0027EAD8 /* TiposDeViagens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiposDeViagens.swift; path = "../../../../../Downloads/Arquivos Swift/arquivos/TiposDeViagens.swift"; sourceTree = "<group>"; };
+		B59BAAD128F55F3B0027EAD8 /* Viagem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Viagem.swift; path = "../../../../../Downloads/Arquivos Swift/arquivos/Viagem.swift"; sourceTree = "<group>"; };
+		B59BAAD428F55F560027EAD8 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "../../../../../Downloads/Arquivos Swift/arquivos/UIView+Extension.swift"; sourceTree = "<group>"; };
 		B5AC142728F2397000A4EFBE /* layout-constraint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "layout-constraint.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AC142A28F2397000A4EFBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5AC142C28F2397000A4EFBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +72,32 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		B543AAC128F55D090087BD65 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B543AAC228F55D2B0087BD65 /* server-response.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		B59BAACC28F55EF40027EAD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B59BAAD128F55F3B0027EAD8 /* Viagem.swift */,
+				B59BAACF28F55F2E0027EAD8 /* TiposDeViagens.swift */,
+				B59BAACD28F55F260027EAD8 /* DecodableData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B59BAAD328F55F490027EAD8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B59BAAD428F55F560027EAD8 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B5AC141E28F2397000A4EFBE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,9 @@
 		B5AC142928F2397000A4EFBE /* layout-constraint */ = {
 			isa = PBXGroup;
 			children = (
+				B59BAAD328F55F490027EAD8 /* Extensions */,
+				B59BAACC28F55EF40027EAD8 /* Model */,
+				B543AAC128F55D090087BD65 /* Mock */,
 				B543AABB28F547DD0087BD65 /* View */,
 				B5AC142A28F2397000A4EFBE /* AppDelegate.swift */,
 				B5AC142C28F2397000A4EFBE /* SceneDelegate.swift */,
@@ -154,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5AC143728F2397100A4EFBE /* LaunchScreen.storyboard in Resources */,
+				B543AAC328F55D2B0087BD65 /* server-response.json in Resources */,
 				B5AC143F28F2B01E00A4EFBE /* HomeTableViewHeader.xib in Resources */,
 				B5AC143428F2397100A4EFBE /* Assets.xcassets in Resources */,
 				B5AC143228F2397000A4EFBE /* Main.storyboard in Resources */,
@@ -168,9 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59BAAD228F55F3B0027EAD8 /* Viagem.swift in Sources */,
 				B5AC142F28F2397000A4EFBE /* ViewController.swift in Sources */,
 				B543AABF28F5483B0087BD65 /* ViagemTableViewCell.swift in Sources */,
+				B59BAAD528F55F560027EAD8 /* UIView+Extension.swift in Sources */,
+				B59BAAD028F55F2E0027EAD8 /* TiposDeViagens.swift in Sources */,
 				B5AC144328F2D49F00A4EFBE /* HomeTableViewHeader.swift in Sources */,
+				B59BAACE28F55F260027EAD8 /* DecodableData.swift in Sources */,
 				B5AC142B28F2397000A4EFBE /* AppDelegate.swift in Sources */,
 				B5AC142D28F2397000A4EFBE /* SceneDelegate.swift in Sources */,
 			);
