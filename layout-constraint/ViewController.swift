@@ -12,10 +12,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var viagensTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        viagensTableView.dataSource = self
-        viagensTableView.delegate = self
+        configuraTableView()
         view.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1)
         // Do any additional setup after loading the view.
+    }
+
+    func configuraTableView() {
+        viagensTableView.register(UINib(nibName: "ViagemTableViewCell", bundle: nil), forCellReuseIdentifier: "ViagemTableViewCell")
+        viagensTableView.dataSource = self
+        viagensTableView.delegate = self
     }
 }
 
